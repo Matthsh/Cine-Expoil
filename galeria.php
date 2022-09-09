@@ -1,24 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <!--Import Google Icon Font-->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!--Import materialize.css-->
-    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cinexpoil</title>
-</head>
-<body class="#bdbdbd grey lighten-1">
+<?php include "cabecalho.php" ?>
+<body>
     <!--JavaScript at end of body for optimized loading-->
     <script type="text/javascript" src="js/materialize.min.js"></script>
     <!-- Navegação do site -->
     <nav class="nav-extended #A50000 red accent-4">
         <div class="nav-wrapper">
             <ul id="nav-mobile" class="right">   
-                <li><a href="index.html">Galeria</a></li>
-                <li><a href="cadastrar.html">Cadastrar</a></li>
+                <li class="active"><a  href="galeria.php">Galeria</a></li>
+                <li><a href="cadastrar.php">Cadastrar</a></li>
             </ul>
         </div>
         <div class="nav-header center">
@@ -38,7 +27,7 @@
             <div class="card hoverable waves-effect waves-light">
                 <div class="card-image">
                     <img src="https://www.themoviedb.org/t/p/w300/uzERcfV2rSHNhW5eViQiO9hNiA7.jpg">
-                    <span class="card-title right-align"><a class="btn-floating hoverable waves-effect waves-light black N/A transparent"><i class="material-icons">favorite_border</i></a></span>
+                    <span class="card-title right-align"><a class="btn-floating hoverable waves-effect waves-light black N/A transparent"><i class="material-icons red-text">favorite_border</i></a></span>
                 </div>
                 <p class="valign-wrapper"><i class="material-icons">star</i> 8.0</p>
                 <div class="card-content">
@@ -50,7 +39,7 @@
             <div class="card hoverable waves-effect waves-light">
                 <div class="card-image">
                     <img src="https://www.themoviedb.org/t/p/w300/kxFxtYdaIaGsp3N9KEtPSj7yqEE.jpg">
-                    <span class="card-title right-align"><a class="btn-floating hoverable waves-effect waves-light black N/A transparent"><i class="material-icons">favorite_border</i></a></span>
+                    <span class="card-title right-align"><a class="btn-floating hoverable waves-effect waves-light black N/A transparent"><i class="material-icons red-text">favorite_border</i></a></span>
                 </div>
                 <p class="valign-wrapper"><i class="material-icons">star</i> 8.3</p>
                 <div class="card-content">
@@ -62,7 +51,7 @@
             <div class="card hoverable waves-effect waves-light">
                 <div class="card-image">
                     <img src="https://image.tmdb.org/t/p/w300_and_h450_face/6vSMKqxgRREQmzSZpi1qwPg1rVm.jpg">
-                    <span class="card-title right-align"><a class="btn-floating hoverable waves-effect waves-light black N/A transparent"><i class="material-icons">favorite_border</i></a></span>
+                    <span class="card-title right-align"><a class="btn-floating hoverable waves-effect waves-light black N/A transparent"><i class="material-icons red-text">favorite_border</i></a></span>
                 </div>
                 <p class="valign-wrapper"><i class="material-icons">star</i> 7.6</p>
                 <div class="card-content">
@@ -74,7 +63,7 @@
             <div class="card hoverable waves-effect waves-light">
                 <div class="card-image">
                     <img src="https://www.themoviedb.org/t/p/w300/6moyjAEMV9OZ3EurotIX0mPiK6y.jpg">
-                    <span class="card-title right-align"><a class="btn-floating hoverable waves-effect waves-light black N/A transparent"><i class="material-icons">favorite_border</i></a></span>
+                    <span class="card-title right-align"><a class="btn-floating hoverable waves-effect waves-light black N/A transparent"><i class="material-icons red-text">favorite_border</i></a></span>
                 </div>
                 <p class="valign-wrapper"><i class="material-icons">star</i> 7.5</p>
                 <div class="card-content">

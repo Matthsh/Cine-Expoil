@@ -1,0 +1,20 @@
+body {
+    background-color: #e5e5e5;
+}
+
+.nav-extended {
+    background-image: url("photo-1585951237318-9ea5e175b891.webp");
+    background-size:cover;
+    background-size: 55 300;
+    background-position: 50% 60%;
+    background-blend-mode:multiply;
+}
+
+nav ul li.active, .tab a.active {
+    border-bottom: solid 2px #FFF;
+}
+
+.nav-header h1 {
+    text-shadow: 2px 2px 8px black;
+}
+
