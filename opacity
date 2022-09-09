@@ -1,0 +1,20 @@
+.navbar {
+  text-shadow: 1px 1px 2px #000;
+  font-size: 120%;
+}
+
+.bg-navbar-new {
+  background: rgba(191, 30, 46, 0.8);
+  transition-property: background;
+  transition-duration: 0.7s;
+}
+
+.bg-navbar-transparent {
+  background-image: linear-gradient(to top, rgba(191, 30, 46, 0.01), rgba(191, 30, 46, 0.8));
+  transition-property: background-image;
+  transition-duration: 0.7s;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: rgba(255, 255, 255, 0.8);
+}
