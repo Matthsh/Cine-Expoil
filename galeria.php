@@ -55,20 +55,22 @@ $filme4 = [
             </ul>
         </div>
     </nav>
-    
-    <div class="row valing-wrapper center">
-        <?php while ($filme = $filmes->fetchArray()) : ?> 
-            <div class="col s3">
-                <div class="card hoverable waves-effect waves-light">
-                    <div class="card-image">
-                        <img src="<?= $filme["poster"]?>">
-                        <span class="card-title right-align"><a class="btn-floating hoverable waves-effect waves-light black N/A transparent"><i class="material-icons red-text">favorite_border</i></a></span>
+
+    <div class="countainer">    
+        <div class="row valing-wrapper center">
+            <?php while ($filme = $filmes->fetchArray()) : ?> 
+                <div class="col s12 m6 l3">
+                    <div class="card hoverable waves-effect waves-light">
+                        <div class="card-image">
+                            <img src="<?= $filme["poster"]?>">
+                            <span class="card-title right-align"><a class="btn-floating hoverable waves-effect waves-light black N/A transparent"><i class="material-icons red-text">favorite_border</i></a></span>
+                        </div>
+                        <p class="valign-wrapper"><i class="material-icons">star</i><?= $filme["nota"] ?></p>
+                        <div class="card-content"><span class="center"><?php echo $filme["titulo"] ?></span></div>
                     </div>
-                    <p class="valign-wrapper"><i class="material-icons">star</i><?= $filme["nota"] ?></p>
-                    <div class="card-content"><span class="center"><?php echo $filme["titulo"] ?></span></div>
                 </div>
-            </div>
-        <?php endwhile ?>
+            <?php endwhile ?>
+        </div>
     </div>
     
 </body>
