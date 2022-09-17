@@ -6,29 +6,6 @@ $bd = new SQLite3("filmes.db");
 $sql = "SELECT * FROM filmes";
 $filmes = $bd->query($sql);
 
-
-$filme1 = [
-    "titulo"=> "Duna",
-    "nota"=> 8.0,
-    "poster"=> "https://www.themoviedb.org/t/p/w300/uzERcfV2rSHNhW5eViQiO9hNiA7.jpg"];
-
-$filme2 = [
-    "titulo"=> "Homem-aranha",
-    "nota"=>  8.3,
-    "poster"=> "https://www.themoviedb.org/t/p/w300/kxFxtYdaIaGsp3N9KEtPSj7yqEE.jpg"];
-
-$filme3 = [
-    "titulo"=> "Eu sou groot",
-    "nota"=>  7.6,
-    "poster"=> "https://image.tmdb.org/t/p/w300_and_h450_face/6vSMKqxgRREQmzSZpi1qwPg1rVm.jpg"];
-
-
-$filme4 = [
-    "titulo"=> "Trem Bala",
-    "nota"=>  7.5,
-    "poster"=> "https://www.themoviedb.org/t/p/w300/6moyjAEMV9OZ3EurotIX0mPiK6y.jpg"];
-
-//$filmes = [$filme1, $filme2, $filme3, $filme4];
 ?>
 
 
@@ -74,4 +51,13 @@ $filme4 = [
     </div>
     
 </body>
+
+<?php if(isset($_GET["msg"])) : ?>
+<script>
+    M.toast({
+        html: '<?= $_GET["msg"] ?>'
+    }); 
+</script>
+<?php endif ?>
+
 </html>

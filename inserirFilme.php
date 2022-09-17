@@ -1,10 +1,11 @@
 <?php 
 
-$titulo = $_POST["titulo"];
-$nota = $_POST["nota"];
-$poster = $_POST["poster"];
-
 $bd = new SQLite3("filmes.db");
+
+$titulo = $bd->escapeString($_POST["titulo"]);
+$nota = $bd->escapeString($_POST["nota"]);
+$poster = $bd->escapeString($_POST["poster"]);
+
 
 $sql = "INSERT INTO filmes (titulo, poster, nota) 
         VALUES (:titulo, :poster, :nota)";
@@ -19,5 +20,7 @@ if ($stmt->execute())
     echo "\nfilmes inseridos\n";
 else 
     echo "\n[ERRO]:filmes NÃO inseridos\n";
+
+header("Location: galeria.php?msg=filme+cadastrado+com+sucesso");
 
 ?> 
