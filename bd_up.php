@@ -30,16 +30,37 @@ if ($bd->exec($sql))
 else 
     echo "\n[ERRO]:filmes NÃO inseridos\n";
 
-    $sql = "INSERT INTO filmes (id, titulo, poster, nota) VALUES (
-        1, 
-        'Homem-aranha', 
-        'https://www.themoviedb.org/t/p/w300/kxFxtYdaIaGsp3N9KEtPSj7yqEE.jpg', 
-        8.3)";
-        
-    if ($bd->exec($sql)) 
-        echo "\nfilmes inseridos\n";
-    else 
-        echo "\n[ERRO]:filmes NÃO inseridos\n";
+$sql = "INSERT INTO filmes (id, titulo, poster, nota) VALUES (
+    1, 
+    'Homem-aranha', 
+    'https://www.themoviedb.org/t/p/w300/kxFxtYdaIaGsp3N9KEtPSj7yqEE.jpg', 
+    8.3)";
+    
+if ($bd->exec($sql)) 
+    echo "\nfilmes inseridos\n";
+else 
+    echo "\n[ERRO]:filmes NÃO inseridos\n";
 
+
+$sql = "INSERT INTO filmes (titulo, poster, nota) VALUES ( 
+    'Eu sou groot', 
+    'https://image.tmdb.org/t/p/w300_and_h450_face/6vSMKqxgRREQmzSZpi1qwPg1rVm.jpg', 
+    7.6)";
+    
+if ($bd->exec($sql)) 
+    echo "\nfilmes inseridos\n";
+else 
+    echo "\n[ERRO]:filmes NÃO inseridos\n";
+
+$sql = "INSERT INTO filmes (titulo, poster, nota) VALUES ( 
+    'Trem Bala', 
+    'https://www.themoviedb.org/t/p/w300/6moyjAEMV9OZ3EurotIX0mPiK6y.jpg', 
+    7.5)";
+    
+if ($bd->exec($sql)) 
+    echo "\nfilmes inseridos\n";
+else 
+    echo "\n[ERRO]:filmes NÃO inseridos\n";
 
 ?>
+

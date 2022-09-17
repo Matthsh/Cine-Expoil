@@ -1,4 +1,15 @@
-<?php include "cabecalho.php" ?>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <title>Cinexpoil</title>
+</head>
 
 <body>
     <!-- Navegação do site -->
@@ -32,37 +43,34 @@
 
                         <!-- Input titulo -->
                         <div class="row">
-                            <div class="input-fild col s12">
+                            <div class="input-field col s12">
                                 <input id="titulo" type="text" class="validate" name="titulo" required>
                                 <label for="titulo">Título do filme</label>
                             </div>
                         </div>
                         <!-- Input nota -->
                         <div class="row">
-                            <div class="input-fild col s3">
-                            <input id="nota" type="number" step="1" min=0 max=10 name="nota" class="validate" required>
-                            <label for="nota">Nota</label>
+                            <div class="input-field col s4">
+                                <input id="nota" type="number" step="0.5" min=0 max=10 name="nota" class="validate" required>
+                                <label for="nota">Nota</label>
+                            </div>
                         </div>
-                    </div>
-                    <!-- input imagem -->
-                    <div class="file-field input-field">
-                        <div class="btn grey darken-4 hoverable">
-                            <span>Capa do filme</span>
-                            <input type="file">
+                        <!-- input imagem -->
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <input id="nota" type="text" name="poster" class="validate" required>
+                                <label for="nota">Capa do filme</label>
+                            </div>
                         </div>
-                        <div class="file-path-wrapper">
-                            <input class="file-path validate" type="text" name="poster">
-                        </div>
-                    </div>
 
-                    <div class="card-action">
-                        <button type="submit" class="waves-effect waves-light btn #b71c1c red darken-4">Salvar</button>
-                        <a href="galeria.php" class="waves-effect waves-light btn grey">Cancelar</a>
+                        <div class="card-action">
+                            <button type="submit" class="waves-effect waves-light btn #b71c1c red darken-4">Salvar</button>
+                            <a href="galeria.php" class="waves-effect waves-light btn grey">Cancelar</a>
+                        </div>
+
                     </div>
 
                 </div>
-
-            </div>
         </form>
     </div>
 </body>
