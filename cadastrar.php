@@ -16,8 +16,8 @@
     <nav class="nav-extended #A50000 red accent-4">
         <div class="nav-wrapper">
             <ul id="nav-mobile" class="right">
-                <li><a href="galeria.php">Galeria</a></li>
-                <li class="active"><a href="cadastrar.php">Cadastrar</a></li>
+                <li><a href="/">Galeria</a></li>
+                <li class="active"><a href="/novo">Cadastrar</a></li>
             </ul>
         </div>
         <div class="nav-header center">
@@ -35,7 +35,7 @@
     <!-- Linhas do cadastro -->
     <div class="row">
 
-        <form action="inserirFilme.php" method="POST">
+        <form method="POST">
             <div class="col s6 offset-s3">
                 <div class="card">
                     <div class="card-content">
@@ -65,7 +65,7 @@
 
                         <div class="card-action">
                             <button type="submit" class="waves-effect waves-light btn #b71c1c red darken-4">Salvar</button>
-                            <a href="galeria.php" class="waves-effect waves-light btn grey">Cancelar</a>
+                            <a href="/" class="waves-effect waves-light btn grey">Cancelar</a>
                         </div>
 
                     </div>

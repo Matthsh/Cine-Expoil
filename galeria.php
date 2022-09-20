@@ -1,8 +1,10 @@
 <?php include "cabecalho.php" ?>
 
 <?php
+session_start();
 
 require "./repository/FilmesRepositoryPDO.php";
+require "./util/mensagem.php";
 
 $filmesRepository = new FilmesRepositoryPDO();
 $filmes = $filmesRepository->listarTodos();
@@ -16,8 +18,8 @@ $filmes = $filmesRepository->listarTodos();
     <nav class="nav-extended #A50000 red accent-4">
         <div class="nav-wrapper">
             <ul id="nav-mobile" class="right">   
-                <li class="active"><a  href="galeria.php">Galeria</a></li>
-                <li><a href="cadastrar.php">Cadastrar</a></li>
+                <li class="active"><a  href="/">Galeria</a></li>
+                <li><a href="/novo">Cadastrar</a></li>
             </ul>
         </div>
         <div class="nav-header center">
@@ -48,15 +50,9 @@ $filmes = $filmesRepository->listarTodos();
             <?php endforeach ?>
         </div>
     </div>
+
+    <?= Mensagem::mostrar(); ?>
     
 </body>
-
-<?php if(isset($_GET["msg"])) : ?>
-<script>
-    M.toast({
-        html: '<?= $_GET["msg"] ?>'
-    }); 
-</script>
-<?php endif ?>
 
 </html>
